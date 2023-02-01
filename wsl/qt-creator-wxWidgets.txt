@@ -1,0 +1,5 @@
+wxCXXFLAGS = $$system(wx-config --cxxflags --unicode=yes --debug=no)
+wxLinkOptions = $$system(wx-config --debug=no --libs --unicode=yes)
+LIBS += $$wxLinkOptions
+QMAKE_CXXFLAGS_RELEASE += $$wxCXXFLAGS
+QMAKE_CXXFLAGS_DEBUG += $$wxCXXFLAGS
